@@ -22,3 +22,11 @@ when@test:
         test: true
         session:
             storage_factory_id: session.storage.factory.mock_file
+
+        logger:
+        handlers:
+            main:
+                type:   stream
+                path:   "%kernel.logs_dir%/%kernel.environment%.log"
+                level:  debug
+                channels: ["!event"]   

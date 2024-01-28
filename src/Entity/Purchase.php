@@ -17,7 +17,7 @@ class Purchase
     private ?User $user = null;
 
     #[ORM\ManyToOne(inversedBy: 'purchases')]
-    private ?Product $sku = null;
+    private ?Product $product = null;
 
     public function getId(): ?int
     {
@@ -36,14 +36,14 @@ class Purchase
         return $this;
     }
 
-    public function getSku(): ?Product
+    public function getProduct(): ?Product
     {
-        return $this->sku;
+        return $this->product;
     }
 
-    public function setSku(?Product $sku): self
+    public function setProduct(?Product $product): self
     {
-        $this->sku = $sku;
+        $this->product = $product;
 
         return $this;
     }
