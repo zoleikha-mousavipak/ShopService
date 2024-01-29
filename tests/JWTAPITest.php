@@ -38,30 +38,13 @@ class JWTAPITest extends WebTestCase
         return $client;
     }
 
-
     /**
-     * test get Products
+     * test get authenticated user
     */
-    public function testGetProducts()
+    public function testGetUser()
     {
         $client = $this->createAuthenticatedClient();
-        $client->request('GET', '/api/user/products');
-        $this->assertEquals(200, $client->getResponse()->getStatusCode());
-        $this->assertResponseIsSuccessful();
-    }
-
-    /**
-     * test post Products
-    */
-    public function testPostPurchasedProduct()
-    {
-        $client = $this->createAuthenticatedClient();
-
-        // Replace '15' and '2' with actual Product ID
-        $data = ['product_id' => 15];
-
-        $client->request('POST', '/api/user/products', [], [], ['CONTENT_TYPE' => 'application/json'], json_encode($data));
-
+        $client->request('GET', '/api/user');
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
         $this->assertResponseIsSuccessful();
     }

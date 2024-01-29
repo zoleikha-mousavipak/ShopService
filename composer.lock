@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cad1921c9a2e3eeed6f0e57d97857e1b",
+    "content-hash": "df4c6cd025747431fbb6de3e14c017a6",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -5692,6 +5692,70 @@
                 "source": "https://github.com/phar-io/version/tree/3.2.1"
             },
             "time": "2022-02-21T01:04:05+00:00"
+        },
+        {
+            "name": "phphd/jwt-auth-test-bundle",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phphd/jwt-auth-test-bundle.git",
+                "reference": "64e8f1696179b22524d5672fc130381ed21c9b91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phphd/jwt-auth-test-bundle/zipball/64e8f1696179b22524d5672fc130381ed21c9b91",
+                "reference": "64e8f1696179b22524d5672fc130381ed21c9b91",
+                "shasum": ""
+            },
+            "require": {
+                "lexik/jwt-authentication-bundle": "^2.0",
+                "php": ">=8.1",
+                "symfony/dependency-injection": "^6.1 | ^7.0",
+                "symfony/http-kernel": "^6.0 | ^7.0",
+                "symfony/security-core": "^6.0 | ^7.0"
+            },
+            "require-dev": {
+                "phphd/coding-standard": "0.4.*",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-phpunit": "^1.3",
+                "phpunit/phpunit": "^9.4",
+                "psalm/plugin-phpunit": "^0.18.4",
+                "symfony/var-dumper": "^6.0",
+                "tomasvotruba/type-coverage": "^0.2.1",
+                "vimeo/psalm": "^5.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhPhD\\JwtAuthTest\\": "src/",
+                    "PhPhD\\JwtAuthTestBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yevhen Sidelnyk",
+                    "email": "zsidelnik@gmail.com"
+                }
+            ],
+            "description": "JWT Authentication for API testing",
+            "keywords": [
+                "auth",
+                "jwt",
+                "phpunit",
+                "testing"
+            ],
+            "support": {
+                "issues": "https://github.com/phphd/jwt-auth-test-bundle/issues",
+                "source": "https://github.com/phphd/jwt-auth-test-bundle/tree/1.0.0"
+            },
+            "time": "2023-12-30T17:44:42+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",

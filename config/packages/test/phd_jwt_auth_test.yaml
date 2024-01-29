@@ -1,0 +1,4 @@
+phd_jwt_auth_test:
+    authenticators:
+        -   name: default
+            user_provider: security.user_providers
